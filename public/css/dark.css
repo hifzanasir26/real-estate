@@ -1,0 +1,406 @@
+/* ✅ Dark Mode Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f9f9f9;
+  --primary-color: #ff5e00;
+  --accent-color: #ff5e00; /* NEW for button bg etc. */
+  --muted-text: #6b7280;
+  --link-color: #0b1f33;
+  --light-bg: #f0f0f0;
+  --hover-bg: #f8f9fa;
+  --input-bg: #ffffff;       /* NEW: for search input background */
+  --input-border: #ccc;      /* NEW: for search input border */
+   --card-bg: #f9f9f9; /* Light mode */
+  --card-dark-bg: #1a1a1a; /* Extra dark for dark mode */
+   --card-bg: #f9f9f9;        /* Light card background */
+  /* --card-footer-bg: #f0f0f0;  */
+  --why-bg: #ffffff; /* Full white in light mode */
+      --section-bg: #ffffff;   /* Light mode background */
+ --services-bg: #f9f9f9;
+    --services-heading-color: #0f172a;
+    --services-subtitle-color: #2563eb;
+    --services-text-color: #333333;
+     --card-title-color: #111; /* black or dark */
+    --card-subtitle-color: #6c757d; /* muted */
+   --heading-color: #222; /* light mode */
+    --carousel-dot: #ccc;
+  --carousel-dot-active: #ff5a00;
+   --accordion-text-color: #111827; /* for light mode */
+  --accordion-bg-active: #f0f0f0;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --primary-color: #ff5e00;
+  --accent-color: #ff5e00; /* keep same for consistency */
+  --muted-text: #d1d5db;
+  --link-color: #e2e8f0;
+  --light-bg: #1f1f1f;
+  --hover-bg: #2a2a2a;
+  --input-bg: #ffffff;       /* NEW: darker bg for input */
+  --input-border: #ccc;      /* NEW: subtle border in dark mode */
+   --card-bg: #1e1e1e; /* Default card color */
+  --card-dark-bg: #1a1a1a; /* Darker card */
+   --card-bg: #1a1a1a;         /* Darker card background */
+  /* --card-footer-bg: #1e1e1e;  */
+    --why-bg: #0d0d0d; /* Fully dark background in dark mode */
+    --section-bg: #121212;   /* Dark mode background */
+  --services-bg: #121212;
+    --services-heading-color: #ffffff;
+    --services-subtitle-color: #60a5fa; /* lighter blue for dark bg */
+    --services-text-color: #dddddd;
+     --card-title-color: #ffffff;
+    --card-subtitle-color: #cccccc;
+     --heading-color: #fff; /* dark mode */
+      --carousel-dot: #eee; /* brighter dot on dark bg */
+  --carousel-dot-active: #ff5a00; /* active stays orange */
+   --accordion-text-color: #ffffff; /* for dark mode */
+  --accordion-bg-active: #222;
+}
+
+#darkModeToggle.btn-outline-dark {
+    border-color: var(--text-color);
+    color: var(--text-color);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#darkModeToggle.btn-outline-dark:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* halki si shadow */
+    color: var(--text-color);
+}
+
+/*  */
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dropdown */
+.dropdown-menu .dropdown-item {
+  color: var(--text-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: var(--primary-color);
+  background-color: var(--hover-bg);
+}
+
+/* Buttons */
+.btn-style {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.btn-style:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn2 {
+  border-radius: 30px;
+}
+
+/* Typography */
+.responsive-heading {
+  font-size: 38px;
+  line-height: 50px;
+}
+
+@media (max-width: 576px) {
+  .responsive-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* Section 2 */
+#services {
+  background-color: var(--card-bg);
+}
+
+.title-content1 {
+  color: #418aff;
+}
+
+.title-content2 {
+  color: var(--text-color);
+}
+
+.services-section {
+  background: var(--card-bg);
+}
+
+.service-card {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.service-title a {
+  color: var(--link-color);
+}
+
+.service-title a:hover {
+  color: var(--primary-color);
+}
+
+.service-desc {
+  color: var(--muted-text);
+}
+
+/* Section 3 */
+.card-footer span i {
+  color: var(--primary-color);
+}
+
+/* Section 4 */
+.property {
+  color: var(--link-color);
+}
+
+.property:hover {
+  color: var(--primary-color);
+}
+
+/* Blog Section */
+.blog-section {
+  background: var(--card-bg);
+}
+
+.blog-title {
+  color: var(--link-color);
+}
+
+.blog-intro,
+.blog-text {
+  color: var(--muted-text);
+}
+
+.blog-card {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* .card-body{
+    background: var(--bg-color);
+
+}
+.card-footer{
+background: var(--bg-color);
+} */
+
+.blog-heading {
+  color: var(--link-color);
+}
+
+.blog-heading:hover {
+  color: var(--primary-color);
+}
+
+.blog-date {
+  color: #10b981;
+}
+
+/* Responsive Blog */
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 26px;
+  }
+
+  .blog-container {
+    gap: 20px;
+  }
+
+  .blog-right {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 40px 20px;
+  }
+}
+
+/* Property Cards */
+.property-cards {
+  background: var(--card-bg);
+}
+
+.property-card {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.icon-wrapper {
+  background: var(--light-bg);
+}
+
+.property-title {
+  color: var(--link-color);
+}
+
+.property-desc {
+  color: var(--muted-text);
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
+
+/* Dots/Carousel */
+.dot {
+  background-color: var(--hover-bg);
+}
+
+.active-dot {
+  background-color: var(--primary-color);
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary-color);
+}
+
+/* Footer */
+/* footer {
+  background-color: var(--card-bg);
+}
+
+.footer-link {
+  color: var(--text-color);
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
+.social-icon {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+} */
+
+
+/* Dark background for the right side */
+#why {
+  background-color: var(--why-bg);
+  color: var(--text-color);
+}
+
+/* Headings and paragraphs */
+#why h2,
+#why h5,
+#why p {
+    color: var(--text-color);
+}
+
+
+/* Accordion styling for dark mode */
+#why .accordion-item {
+    background-color: var(--card-bg);
+    border-color: var(--hover-bg);
+    color: var(--text-color);
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: var(--accordion-text-color) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accordion-bg-active) !important;
+  color: var(--accordion-text-color) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+}
+
+#why .accordion-body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Optional: Remove default border shadows if needed */
+#why .accordion-item.shadow-sm {
+    box-shadow: none;
+}
+
+/* header */
+#darkModeToggle, #darkModeMobile {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+/* about */
+/* Apply to entire page in dark mode */
+/* Dark mode for inputs, textarea, and select */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"],
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #0d0d0d !important;
+    color: #ffffff !important;
+    border: 1px solid #333 !important;
+}
+
+
+/* Placeholder color in dark mode */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #aaaaaa;
+}
+
+/* DARK MODE DROPDOWN MENU */
+body.dark-mode .dropdown-menu {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .dropdown-menu .dropdown-item {
+    color: #f8fafc;
+}
+
+body.dark-mode .dropdown-menu .dropdown-item:hover {
+    background-color: #334155;
+    color: #ff5a00;
+}
+
+
+
+
+
+
+
+
+
+

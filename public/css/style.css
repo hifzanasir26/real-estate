@@ -1,0 +1,518 @@
+/* header */
+body {
+  margin: 0;
+  padding-top: 100px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #333;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #ff5e00;
+  /* Orange text on hover */
+  background-color: #f8f9fa;
+  /* Optional: light gray background */
+}
+
+/* section 1 */
+
+.btn-style {
+  background-color: #ff5e00;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.btn-style:hover {
+  background-color: #ff5e00;
+  color: white;
+}
+
+.btn2 {
+  border-radius: 30px;
+}
+
+.responsive-heading {
+  font-size: 38px;
+  line-height: 50px;
+}
+
+@media (max-width: 576px) {
+  .responsive-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* section 2 */
+#services {
+  background-color: #F7F7F7;
+}
+
+.title-content1 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #418aff;
+}
+
+.title-content2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0px 40px;
+  background: #f9f9f9;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+.service-icon.blue {
+  background: #3f83f8;
+}
+
+.service-icon.pink {
+  background: #f90082;
+}
+
+.service-icon.yellow {
+  background: #ffc107;
+}
+
+.service-title a{
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1f33;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+.service-title a:hover{
+  color: #ff5a00;
+
+}
+
+.service-desc {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+/* section 3*/
+.card-footer span i {
+  color: #ff5e00;
+}
+
+/* section 4*/
+.property {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.property:hover {
+  color: #ff5e00;
+}
+
+/* section */
+.blog-section {
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.blog-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-explore {
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #0b1f33;
+}
+
+.blog-intro {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.blog-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 0 0 15px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 600;
+  margin: 12px 20px 4px;
+}
+
+.blog-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 20px 6px;
+}
+
+.blog-heading:hover {
+  color: #ff5e00;
+}
+
+.blog-text {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0 20px 6px;
+}
+
+/* ✅ Responsive Styles */
+
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 26px;
+  }
+
+  .blog-container {
+    gap: 20px;
+  }
+
+  .blog-right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .blog-card {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 40px 20px;
+  }
+
+  .blog-title {
+    font-size: 22px;
+  }
+
+  .blog-intro {
+    font-size: 14px;
+  }
+
+  .blog-heading {
+    font-size: 18px;
+  }
+
+  .blog-text {
+    font-size: 14px;
+  }
+
+  .blog-date {
+    font-size: 12px;
+  }
+}
+
+
+
+/* section */
+
+.property-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 10px 50px;
+  background: #f9f9f9;
+}
+
+.property-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 35px 25px;
+  align-items: center;
+  /* ⬅️ Changed from 'flex-start' */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+  width: 150px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: #f0f0f0;
+}
+
+.icon-wrapper.blue {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.icon-wrapper.pink {
+  background-color: rgba(255, 0, 128, 0.1);
+  color: #f90082;
+}
+
+.icon-wrapper.green {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.property-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1f33;
+  margin: 0 0 10px 0;
+}
+
+.property-desc {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card-title a {
+  color: var(--card-title-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+  color:#f97316 ; /* Red shade on hover */
+}
+/* section */
+
+.accordion-button {
+  background-color: transparent !important;
+  color: var(--accordion-text-color) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--accordion-text-color) !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+}
+
+@media (max-width: 576px) {
+  .property-cards {
+    padding: 10px 15px;
+  }
+
+  .property-card {
+    flex-direction: row;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .icon-wrapper {
+    width: 90px;
+    height: 80px;
+    font-size: 24px;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  .property-title {
+    font-size: 15px;
+  }
+
+  .property-desc {
+    font-size: 14px;
+  }
+}
+
+
+
+/*  */
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active-dot {
+  background-color: #f97316;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff; /* White dot - visible on dark background */
+  border: 1px solid #999;
+  opacity: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: #ff5a00; /* Orange active dot */
+  transform: scale(1.2);
+}
+
+
+#testimonialCarousel {
+  padding-bottom: 70px;
+}
+
+/* section 5*/
+#second-last {
+  background-color: black;
+}
+
+.header-section {
+  color: white;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+/* footer */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  color: #ff5e00;
+  /* orange color */
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #ff5e00;
+  color: white;
+}
+
+footer {
+  background-color: #0f121d;
+  /* same as icon row background */
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff5e00;
+  /* Orange hover */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  color: #ff5e00;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #ff5e00;
+  color: white;
+}
